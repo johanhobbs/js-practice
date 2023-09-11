@@ -1,0 +1,39 @@
+*{
+    box-sizing:border-box;
+    
+}
+
+body{
+    background: #f4f4f4;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    width: 800px;
+}
+
+aside{
+    padding: 20px;
+    width: 250px;
+    border-radius: 20px;
+    border-right: 5px solid #999;
+}
+
+button{
+    cursor: pointer;
+    background-color: #ffff;
+    border: solid 2px red;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
