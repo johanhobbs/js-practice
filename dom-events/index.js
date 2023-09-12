@@ -1,8 +1,15 @@
-let btn = document.getElementById('btnCount')
-btn.addEventListener('click', () => {
-    let hTwoHeader = document.getElementsByTagName('h2')
-    alert(`The number of h2 tags is: ${hTwoHeader.length}`)
-})
+let menu = document.getElementById('menu')
+let items = document.getElementsByClassName('item')
+
+let data = [].map.call(items, item => item.textContent)
+
+
+
+// let btn = document.getElementById('btnCount')
+// btn.addEventListener('click', () => {
+//     let hTwoHeader = document.getElementsByTagName('h2')
+//     alert(`The number of h2 tags is: ${hTwoHeader.length}`)
+// })
 
 
 // NOTE
