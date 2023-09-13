@@ -1,7 +1,16 @@
-let menu = document.getElementById('menu')
-let items = document.getElementsByClassName('item')
+// NOTE This selects the first element with the class selector of "note"
+//      This value is assigned to a variable called note
 
-let data = [].map.call(items, item => item.textContent)
+let note = document.querySelector('.note')
+
+// NOTE this logs the contents of the variable called note to console
+console.log(note)
+
+
+// let menu = document.getElementById('menu')
+// let items = document.getElementsByClassName('item')
+
+// let data = [].map.call(items, item => item.textContent)
 
 
 
