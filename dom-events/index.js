@@ -1,11 +1,20 @@
-// NOTE This selects the first element with the class selector of "note"
-//      This value is assigned to a variable called note
+let getsiblings = function(e){
+    let siblings = []
 
-let note = document.querySelector('.note')
+    if(!e.parentNode) {
+        return siblings
+    }
 
-// NOTE this logs the contents of the variable called note to console
-console.log(note)
+    let sibling = e.parentNode.firstChild
 
+    while(sibling) {
+        if(sibling.nodeType == 1 && sibling !== e){
+            siblings.push(sibling)
+        }
+        sibling = sibling.nextSibling
+    }
+    return siblings
+}
 
 // let menu = document.getElementById('menu')
 // let items = document.getElementsByClassName('item')
